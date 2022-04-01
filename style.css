@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 21px;
-    position:sticky;
 }
 
 *{
@@ -111,4 +110,35 @@ img {
     flex-direction: column;
     width:144px;
     align-items: flex-start;
+}
+
+.conteudo :last-child{
+    margin-bottom: 16px;
+}
+
+
+
+
+
+.footer{
+    width:100%;
+    height:92px;
+    bottom:baseline;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+width: 364px;
+height: 61px;;
+border-radius: 50px;
+border-color:transparent;
+background-color: rgba(203, 203, 203, 1);
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size:20px;
 }
