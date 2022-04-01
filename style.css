@@ -79,6 +79,7 @@ img {
     display:flex;
     overflow:hidden;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
 .prato{
