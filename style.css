@@ -157,6 +157,18 @@ font-weight: 400;
 font-size:20px;
 }
 
+a {
+    width: 364px;
+    height: 61px;;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
 /* EVENTOS DE JS */
 
 .opcao-comida{
@@ -178,4 +190,8 @@ visibility: visible;
 .pedido-pronto{
     background-color:rgba(50, 183, 47, 1);
     cursor:pointer;
+}
+
+.clicar-whats{
+visibility: visible;
 }

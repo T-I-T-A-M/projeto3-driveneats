@@ -42,7 +42,8 @@ function escolhaBebida(elemento){
     {
     
     document.querySelector(".fazer-pedido").classList.add("pedido-pronto")
-    document.querySelector(".pedido-pronto").innerHTML="Fechar pedido"
+    document.querySelector(".pedido-pronto").innerHTML="Fechar pedido";
+    document.querySelector("a").classList.add("clicar-whats")
     }
 
 
