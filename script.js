@@ -7,6 +7,7 @@ comidaescolhida.classList.remove("opcao-comida")
 }
 elemento.classList.add("opcao-comida")
 
+fecharPedido()
 }
 
 function escolhaBebida(elemento){
@@ -18,6 +19,7 @@ function escolhaBebida(elemento){
     }
     elemento.classList.add("opcao-bebida")
     
+    fecharPedido()
     }
 
     function escolhaSobremesa(elemento){
@@ -29,9 +31,22 @@ function escolhaBebida(elemento){
         }
         elemento.classList.add("opcao-sobremesa")
         
+        fecharPedido()
     }
 
 
+    function fecharPedido(){
+    if (document.querySelector(".opcao-comida") !==null && 
+    document.querySelector(".opcao-bebida")!== null && 
+    document.querySelector(".opcao-sobremesa") !==null)
+    {
+    
+    document.querySelector(".fazer-pedido").classList.add("pedido-pronto")
+    document.querySelector(".pedido-pronto").innerHTML="Fechar pedido"
+    }
+
+
+}
 
 
 

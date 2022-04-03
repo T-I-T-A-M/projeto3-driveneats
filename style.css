@@ -97,6 +97,7 @@ img {
     padding: 10px;
     padding-top: 40px;
     border: solid white;
+    cursor:pointer;
 }
 
 .bebidas{
@@ -172,4 +173,9 @@ font-size:20px;
 
 .visivel{
 visibility: visible;
+}
+
+.pedido-pronto{
+    background-color:rgba(50, 183, 47, 1);
+    cursor:pointer;
 }
