@@ -73,6 +73,7 @@ img {
     height:82px;
     border-radius: 4px;
     object-fit: cover;
+    margin-bottom: 16px;
 }
 
 .pratos{
@@ -93,8 +94,9 @@ img {
     height: 216px;
     box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.25);
     margin-right:16px;
-    padding-left:10px;
-    padding-right: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    border: solid white;
 }
 
 .bebidas{
@@ -109,16 +111,26 @@ img {
 .texto-prato{
     display:flex;
     flex-direction: column;
-    width:144px;
+    width:100%;
     align-items: flex-start;
+}
+
+.preco{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vetor {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
 }
 
 .conteudo :last-child{
     margin-bottom: 16px;
 }
-
-
-
 
 
 .footer{
@@ -142,4 +154,14 @@ color: white;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size:20px;
+}
+
+/* EVENTOS DE JS */
+
+.opcao{
+    border: green solid;
+}
+
+.visivel{
+visibility: visible;
 }
