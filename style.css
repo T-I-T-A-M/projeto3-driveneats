@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 21px;
+    position:sticky;
+    z-index: 1;
 }
 
 *{
@@ -63,6 +65,12 @@ h6{
     margin-bottom: 7px;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 7px;
+}
 .conteudo{
     padding-left: 19px;
     background-color: #E5E5E5;
@@ -119,13 +127,16 @@ img {
 .preco{
     width:100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .vetor {
     width: 16px;
     height: 16px;
+    position: relative;
+    left: 70px;
+    top: 5px;
     visibility: hidden;
 }
 
@@ -137,11 +148,12 @@ img {
 .footer{
     width:100%;
     height:92px;
-    bottom:baseline;
     background-color: white;
     display:flex;
     justify-content: center;
     align-items: center;
+    position:sticky;
+    bottom: 0px;
 
 }
 
@@ -155,9 +167,10 @@ color: white;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size:20px;
+position:sticky;
 }
 
-a {
+.pedido-realizado {
     width: 364px;
     height: 61px;;
     border-radius: 50px;
@@ -171,16 +184,31 @@ a {
 
 /* EVENTOS DE JS */
 
+.opcao-comida .vetor{
+    visibility: visible;
+}
+
+.opcao-bebida .vetor{
+    visibility: visible;
+}
+
+.opcao-sobremesa .vetor{
+    visibility: visible;
+}
+
 .opcao-comida{
     border: green solid;
 }
 
+
 .opcao-bebida{
     border: green solid;
+    opacity:1;
 }
 
 .opcao-sobremesa{
     border: green solid;
+    
 }
 
 .visivel{
